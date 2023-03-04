@@ -1,0 +1,19 @@
+{
+	"name": "FileSystem",
+	"tree": {
+		"$className": "DataModel",
+
+		"ReplicatedStorage": {
+			"$ignoreUnknownInstances": true,
+			"$className": "ReplicatedStorage",
+			
+			"FileSystem": {
+				"$path": "Source",
+				
+				"Packages": {
+					"$path": "Packages"
+				}
+			}
+		}
+	}
+}

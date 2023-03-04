@@ -1,0 +1,63 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Wally: Build Packages",
+			"detail": "Build all Wally packages, these packages are needed to build the projects",
+			"type": "shell",
+			"command": "wally",
+			"args": [ "install" ],
+			"group": { "kind": "build" },
+			"options": { "cwd": "${workspaceFolder}" },
+			"presentation": {
+				"reveal": "always",
+				"focus": true
+			}
+		},
+
+		{
+			"label": "Selene: Execute Linter",
+			"detail": "Run the selene linter step on the current project code",
+			"type": "shell",
+			"command": "selene",
+			"args": [ "." ],
+			"group": { "kind": "build" },
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"presentation": {
+				"reveal": "always",
+				"focus": true
+			}
+		},
+
+		{
+			"label": "Rojo: Build Binary",
+			"detail": "Build a roblox binary",
+			"type": "shell",
+			"command": "rojo",
+			"args": [ "build", "default.project.json", "-o", "latest.rbxl" ],
+			"group": { "kind": "build" },
+			"options": { "cwd": "${workspaceFolder}" },
+			"presentation": {
+				"reveal": "always",
+				"focus": true
+			}
+		},
+
+		{
+			"label": "Rojo: Host Roblox Project",
+			"detail": "Host a Rojo server for a roblox project",
+			"type": "shell",
+			"command": "rojo",
+			"args": [ "serve", "demo.project.json" ],
+			"group": { "kind": "build" },
+			"options": { "cwd": "${workspaceFolder}" },
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"focus": true
+			}
+		}
+	]
+}

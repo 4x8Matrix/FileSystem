@@ -1,0 +1,15 @@
+[package]
+name = "4x8matrix/filesystem"
+version = "1.0.0"
+realm = "shared"
+registry = "https://github.com/upliftgames/wally-index"
+licence = "Unlicense"
+authors = ["AsynchronousMatrix <Catbob614@gmail.com>"]
+
+description = "A FileSystem manager that helps to require & load modules given a context."
+
+exclude = ["**"]
+include = ["Source", "Source/*", "default.project.json", "wally.lock", "wally.toml", "LICENCE", "README.md"]
+
+[dependencies]
+promise = "evaera/promise@4.0.0"
