@@ -7,11 +7,11 @@
 			"$ignoreUnknownInstances": true,
 			"$className": "ReplicatedStorage",
 			
-			"FileSystem": {
-				"$path": "Source",
+			"Packages": {
+				"$path": "Packages",
 				
-				"Packages": {
-					"$path": "Packages"
+				"FileSystem": {
+					"$path": "Source"
 				}
 			}
 		}

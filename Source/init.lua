@@ -1,4 +1,4 @@
-local Promise = require(script.Packages.promise)
+local Promise = require(script.Parent.promise)
 
 local FileSystem = { }
 

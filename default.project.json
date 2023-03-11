@@ -1,10 +1,6 @@
 {
 	"name": "FileSystem",
 	"tree": {
-		"$path": "Source",
-				
-		"Packages": {
-			"$path": "Packages"
-		}
+		"$path": "Source"
 	}
 }
